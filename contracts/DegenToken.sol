@@ -68,14 +68,20 @@ contract DegenToken is ERC20, Ownable {
         return userCollectionItems;
     }
 
-    function showStore() public view returns (string[] memory) {
-        string[] memory storeItems = new string[](8);
+    // function showStore() public view returns (string[] memory) {
+    //     string[] memory storeItems = new string[](8);
 
-        for (uint256 i = 1; i <= 8; i++) {
-            storeItems[i-1] = redeemableCars[i].name;
+    //     for (uint256 i = 1; i <= 8; i++) {
+    //         storeItems[i-1] = redeemableCars[i].name;
             
-        }
+    //     }
 
+    //     return storeItems;
+    // }
+
+
+    function showStore() public pure returns (string memory) {
+        string memory storeItems = "1. NFT: Bugatti Chiron\n2. NFT: Lamborghini Aventador\n3. NFT: Ferrari LaFerrari\n4. NFT: Rolls-Royce Phantom\n5. NFT: Aston Martin Valkyrie\n6. NFT: McLaren P1\n7. NFT: Koenigsegg Jesko\n8. NFT: Pagani Huayra";
         return storeItems;
     }
 }
