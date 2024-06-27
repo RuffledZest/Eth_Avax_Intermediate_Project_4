@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\Asus\\OneDrive\\Desktop\\HardHat-Projects\\Eth_Avax_Intermediate_Project_4\\contracts\\DegenToken.sol": {
-      "lastModificationDate": 1719475970832,
-      "contentHash": "9a935135392ada11d4c0256f831a7ada",
+      "lastModificationDate": 1719480264733,
+      "contentHash": "6dfe12b45278ca7dc92594140e548260",
       "sourceName": "contracts/DegenToken.sol",
       "solcConfig": {
         "version": "0.8.18",
