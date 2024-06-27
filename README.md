@@ -1,4 +1,4 @@
-# Project Title: Degan Token
+# Project Title: Degen Token
 
 A Smart Contract for Degen Token (custom ERC 20 Token) deployed on Fuji Network. It has Features like mint, burn , transfer token, Redeem token for NFTs, check token Balance.
 
