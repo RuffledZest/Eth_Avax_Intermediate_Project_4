@@ -173,11 +173,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "burner",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
 						"name": "val",
 						"type": "uint256"
@@ -296,11 +291,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
 						"name": "carId",
 						"type": "uint256"
@@ -366,9 +356,9 @@
 				"name": "showUserCollection",
 				"outputs": [
 					{
-						"internalType": "string[]",
+						"internalType": "uint256[]",
 						"name": "",
-						"type": "string[]"
+						"type": "uint256[]"
 					}
 				],
 				"stateMutability": "view",
@@ -505,11 +495,6 @@
 				"name": "userCollections",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
 						"name": "id",
 						"type": "uint256"
@@ -638,11 +623,11 @@
 			]
 		},
 		"contracts/DegenToken.sol": {
-			"keccak256": "0x2f4ca5eef5db973f8b93ca6239d43062dafed538681f9eca76608824f5a728a5",
+			"keccak256": "0xbd747e9d992c80c2fb9391bf559da62240f3af8ac4b18b8ab976d80e8400eaf6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://185850c043d46142bd98ff52c580af376f1d41bc0a822143c73a9181103d75a8",
-				"dweb:/ipfs/QmeLfxqJc789iYwFxdLw8Dzwg6AaxKXGxmbK9w6W2AAAu9"
+				"bzz-raw://124745cd8a727f077c6c37fd419b1f0a193d0541b2afbf7ae7a1a5ef51fdc1ba",
+				"dweb:/ipfs/QmUSHMGNVWmZJ1U7iGEX8Zs1h9d3QCebU5VxoVJBGRYKba"
 			]
 		}
 	},

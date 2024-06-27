@@ -11,7 +11,6 @@ contract DegenToken is ERC20, Ownable {
     }
     
     struct UserCollection {
-        string name;
         uint256 id;
     }
 
@@ -38,9 +37,9 @@ contract DegenToken is ERC20, Ownable {
         return 1;
     }
 
-    function burn(address burner, uint256 val) public {
-        require(balanceOf(burner) >= val, "You don't have enough Degen tokens to burn");
-        _burn(burner, val);
+    function burn( uint256 val) public {
+        require(balanceOf(msg.sender) >= val, "You don't have enough Degen tokens to burn");
+        _burn(msg.sender, val);
     }
 
     function transferToken(address sender, address _receiver, uint256 val) external {
@@ -49,23 +48,22 @@ contract DegenToken is ERC20, Ownable {
         _transfer(sender, _receiver, val);
     }
 
-    function redeemToken(address spender, uint256 carId) external payable {
-        require(redeemableCars[carId].price <= balanceOf(spender), "Insufficient funds");
-        require(balanceOf(spender) >= redeemableCars[carId].price, "You don't have enough Degen tokens to redeem");
-        _burn(spender, redeemableCars[carId].price);
-        CarsNftCollection[spender][carId] += 1;
-        userCollections[spender].push(UserCollection(redeemableCars[carId].name, carId));
+    function redeemToken(uint256 carId) external payable {
+        require(redeemableCars[carId].price <= balanceOf(msg.sender), "Insufficient funds");
+        require(balanceOf(msg.sender) >= redeemableCars[carId].price, "You don't have enough Degen tokens to redeem");
+        _burn(msg.sender, redeemableCars[carId].price);
+        CarsNftCollection[msg.sender][carId] += 1;
+        userCollections[msg.sender].push(UserCollection(carId));
     }
    
-    function showUserCollection(address user) public view returns (string[] memory) {
-        uint256 collectionLength = userCollections[user].length;
-        string[] memory userCollectionItems = new string[](collectionLength);
-    
-        for (uint256 i = 0; i < collectionLength; i++) {
-            userCollectionItems[i] = userCollections[user][i].name;
+    function showUserCollection(address user) public view returns (uint256[] memory) {
+        uint256[] memory userCollection = new uint256[](8);
+
+        for (uint256 i = 1; i <= 8; i++) {
+            userCollection[i-1] = CarsNftCollection[user][i]; 
         }
-    
-        return userCollectionItems;
+
+        return userCollection;
     }
 
     // function showStore() public view returns (string[] memory) {
@@ -80,8 +78,7 @@ contract DegenToken is ERC20, Ownable {
     // }
 
 
-    function showStore() public pure returns (string memory) {
-        string memory storeItems = "1. NFT: Bugatti Chiron\n2. NFT: Lamborghini Aventador\n3. NFT: Ferrari LaFerrari\n4. NFT: Rolls-Royce Phantom\n5. NFT: Aston Martin Valkyrie\n6. NFT: McLaren P1\n7. NFT: Koenigsegg Jesko\n8. NFT: Pagani Huayra";
-        return storeItems;
+    function showStore() external pure returns (string memory) {
+        return "1. NFT: Bugatti Chiron\n2. NFT: Lamborghini Aventador\n3. NFT: Ferrari LaFerrari\n4. NFT: Rolls-Royce Phantom\n5. NFT: Aston Martin Valkyrie\n6. NFT: McLaren P1\n7. NFT: Koenigsegg Jesko\n8. NFT: Pagani Huayra";
     }
 }
