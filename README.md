@@ -144,6 +144,7 @@ npx hardhat help
 * MetacrafterID: RuffledZest (vibhanshalok@gmail.com)
 * Loom Video Link 2nd Attempt (Code walkthrough and Explaination): https://www.loom.com/share/39a4a9dee2c74e079f9ab17336907c40
 * Loom Video Link 1st Attempt (demonstration): https://www.loom.com/share/51bd233693874ddfa20884efb1bb4d84
+* Contract Address: 0xEF8c17796c3E761E29A2202852c234F4AFed96c1
 
 ## License
 
