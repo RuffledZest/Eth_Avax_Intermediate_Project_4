@@ -142,7 +142,8 @@ npx hardhat help
 
 * Name: Vibhansh Alok
 * MetacrafterID: RuffledZest (vibhanshalok@gmail.com)
-* Loom Video Link: https://www.loom.com/share/51bd233693874ddfa20884efb1bb4d84
+* Loom Video Link 1st Attempt (demonstration): https://www.loom.com/share/51bd233693874ddfa20884efb1bb4d84
+* Loom Video Link 2nd Attempt (Code walkthrough and Explaination): https://www.loom.com/share/39a4a9dee2c74e079f9ab17336907c40
 
 ## License
 
