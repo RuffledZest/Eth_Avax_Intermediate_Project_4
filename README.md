@@ -142,10 +142,14 @@ npx hardhat help
 
 * Name: Vibhansh Alok
 * MetacrafterID: RuffledZest (vibhanshalok@gmail.com)
+* (Latest) Loom Video Link 4th Attempt (Demonstrating all the functions mint, burn, redeem, transfer): https://www.loom.com/share/cd69ca0362c74d949ae8bd01d43c120e
+
 * Loom Video Link 3rd Attempt (Showing the Avalance Testnet Transaction on Snowtrace) : https://www.loom.com/share/1fa4deeec7b1420898b21750363e2b5f
+
 * Loom Video Link 2nd Attempt (Code walkthrough and Explaination): https://www.loom.com/share/39a4a9dee2c74e079f9ab17336907c40
+
 * Loom Video Link 1st Attempt (demonstration): https://www.loom.com/share/51bd233693874ddfa20884efb1bb4d84
-* Contract Address: 0xEF8c17796c3E761E29A2202852c234F4AFed96c1
+* Contract Address: 0xe501d744e8F64796bc7954Eb535166a54ABDBD7F
 
 ## License
 
